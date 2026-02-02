@@ -1,4 +1,4 @@
-/* CSS for Upper Hill Junior School Website */
+/* CSS for PCEA KIAMBU ACADEMY AND JUNIOR SCHOOL Website */
 
 :root {
     --primary-color: #007FAE;
@@ -25,7 +25,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 body {
@@ -34,6 +39,8 @@ body {
     color: var(--text-color);
     background-color: var(--light-bg);
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 h1,
@@ -46,6 +53,7 @@ h4 {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -240,6 +248,12 @@ h3 {
     z-index: -2;
 }
 
+@media (max-width: 768px) {
+    .parallax-bg {
+        background-attachment: scroll;
+    }
+}
+
 .parallax-overlay {
     position: absolute;
     top: 0;
@@ -306,11 +320,18 @@ h3 {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    #academics {
+        background-attachment: scroll;
+    }
 }
 
 .academics-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
     margin-top: 60px;
 }
@@ -451,11 +472,18 @@ h3 {
 
 /* Contact Section */
 .contact-section {
-    padding: 100px 0;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 60px 0;
+    }
 }
 
 .grid-2 {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .info-item {
@@ -575,7 +603,6 @@ h3 {
     width: 100%;
     border-collapse: collapse;
     background: var(--white);
-    min-width: 600px;
 }
 
 .modern-table th {
@@ -707,6 +734,7 @@ h3 {
     position: relative;
     padding: 100px 0;
     background: var(--white);
+    overflow: hidden;
 }
 
 .angled-section::before {
@@ -865,14 +893,20 @@ h3 {
 }
 
 .director-section {
-    padding: 100px 0;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .director-section {
+        padding: 40px 0;
+    }
 }
 
 .director-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /* Keep space for the 'blank' image area */
-    gap: 60px;
+    gap: 40px;
     align-items: center;
 }
 
@@ -1194,12 +1228,13 @@ h3 {
 /* Philosophy Section Styles */
 .philosophy-section {
     background: var(--white);
+    overflow: hidden;
 }
 
 .philosophy-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 40px;
     align-items: center;
 }
 
