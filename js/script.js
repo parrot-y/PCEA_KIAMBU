@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Curriculum Modal Logic
     const curriculumData = {
         earlyyears: {
-            title: "Early Years (PP1 & PP2)",
+            title: "Early Years (Playgroup, PP1 & PP2)",
             desc: "Focusing on play-based learning and foundational interaction.",
             subjects: [
                 { name: "Language Activities", icon: "🗣️" },
@@ -68,9 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "Kiswahili / KSL", icon: "🇰🇪" },
                 { name: "Mathematics", icon: "➗" },
                 { name: "Science & Technology", icon: "🔬" },
-                { name: "Agriculture & Nutrition", icon: "🌱" },
+                { name: "Agriculture", icon: "🌱" },
                 { name: "Social Studies", icon: "🗺️" },
-                { name: "Creative Arts", icon: "🖍️" },
+                { name: "Creative Art and Sports", icon: "🖍️" },
                 { name: "Religious Education", icon: "🕊️" }
             ]
         },
@@ -79,14 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: "Pre-technical and technical readiness for career pathways.",
             subjects: [
                 { name: "Integrated Science", icon: "🧪" },
-                { name: "Health Education", icon: "🏥" },
                 { name: "Pre-Technical Studies", icon: "🛠️" },
-                { name: "Business Studies", icon: "💼" },
                 { name: "Agriculture", icon: "🌽" },
                 { name: "Social Studies", icon: "🌍" },
                 { name: "Religious Education", icon: "🙏" },
-                { name: "Life Skills", icon: "🤝" },
-                { name: "Physical Education", icon: "🏟️" }
+                { name: "Life Skills", icon: "🤝" }
             ]
         },
         boarding: {
