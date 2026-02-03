@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { name: "Agriculture", icon: "🌽" },
                 { name: "Social Studies", icon: "🌍" },
                 { name: "Religious Education", icon: "🙏" },
-                { name: "Life Skills", icon: "🤝" }
+                { name: "Creative Arts and Sports", icon: "🎨" }
             ]
         },
         boarding: {
