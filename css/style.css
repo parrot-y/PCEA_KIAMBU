@@ -381,7 +381,7 @@ h3 {
 #academics {
     position: relative;
     padding: 120px 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('../assets/images/school-building-bg.png');
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('../assets/images/school-building-bg.webp');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
