@@ -341,7 +341,7 @@
                     </div>
                     <div class="info-item">
                         <span class="icon">📧</span>
-                        <p>pceakiambuacadamy@gmail.com</p>
+                        <p>academypceakiambu@gmail.com</p>
                     </div>
                     <div class="info-item">
                         <span class="icon">📍</span>
@@ -357,13 +357,28 @@
                 </div>
                 <div class="contact-form-wrapper" data-aos="fade-left">
                     <h3>Enquiry Form</h3>
-                    <form id="contactForm" class="enquiry-form">
-                        <div class="form-group"><input type="text" placeholder="Your Name" required></div>
-                        <div class="form-group"><input type="tel" placeholder="Phone Number" required></div>
-                        <div class="form-group"><input type="text" placeholder="Child's Grade" required></div>
-                        <div class="form-group"><textarea placeholder="Your Message/Question"></textarea></div>
-                        <button type="submit" class="btn btn-primary w-100">Submit Inquiry</button>
+                    <form id="contactForm" class="enquiry-form" onsubmit="sendToWhatsApp(event)">
+                        <div class="form-group"><input type="text" id="name" placeholder="Your Name" required></div>
+                        <div class="form-group"><input type="tel" id="phone" placeholder="Phone Number" required></div>
+                        <div class="form-group"><input type="text" id="grade" placeholder="Child's Grade" required>
+                        </div>
+                        <div class="form-group"><textarea id="message" placeholder="Your Message/Question"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Send via WhatsApp</button>
                     </form>
+                    <script>
+                        function sendToWhatsApp(e) {
+                            e.preventDefault();
+                            const name = document.getElementById('name').value;
+                            const phone = document.getElementById('phone').value;
+                            const grade = document.getElementById('grade').value;
+                            const message = document.getElementById('message').value;
+
+                            const text = `*New Enquiry*\nName: ${name}\nPhone: ${phone}\nGrade: ${grade}\nMessage: ${message}`;
+                            const encodedText = encodeURIComponent(text);
+                            window.open(`https://wa.me/254706190282?text=${encodedText}`, '_blank');
+                        }
+                    </script>
                 </div>
             </div>
         </div>
@@ -380,8 +395,19 @@
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
                     <p>Phone: +254 797285622 / 0706190282</p>
-                    <p>Email: pceakiambuacadamy@gmail.com</p>
+                    <p>Email: academypceakiambu@gmail.com</p>
                     <p>Location: Kiambu Town, Indian Bazaar, near PCEA Emmanuel Church Kangoya</p>
+                    <div class="social-links" style="margin-top: 15px;">
+                        <a href="https://www.facebook.com/profile.php?id=61587300880054" target="_blank"
+                            style="color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            <span>Follow us on Facebook</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
