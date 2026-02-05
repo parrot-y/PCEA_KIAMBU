@@ -166,13 +166,4 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(nextHeroSlide, 7000); // Shuffle every 7 seconds
     }
 
-    // Handle Form Submission placeholder
-    const contactForm = document.querySelector('#contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your inquiry! We will get back to you soon.');
-            contactForm.reset();
-        });
-    }
 });
